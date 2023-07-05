@@ -1,0 +1,15 @@
+GET http://127.0.0.1:8000/api/producto
+
+### guardar prtoductop
+
+POST http://127.0.0.1:8000/api/producto
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre": "PARLANTES",
+    "precio": 40.98,
+    "stock": 24,
+    "descripcion": "Parlante gamer",
+    "categoria_id": 3
+}
