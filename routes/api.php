@@ -23,5 +23,7 @@ Route::prefix('/v1/auth')->group(function (){
 
 });
 
+Route::post("producto/{id}/actualizar-imagen",[ProductoController::class, "actualizarImagen"]);
+
 Route::apiResource("categoria", CategoriaController::class);
 Route::apiResource("producto", ProductoController::class);
