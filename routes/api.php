@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ProductoController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
@@ -27,3 +28,4 @@ Route::post("producto/{id}/actualizar-imagen",[ProductoController::class, "actua
 
 Route::apiResource("categoria", CategoriaController::class);
 Route::apiResource("producto", ProductoController::class);
+Route::apiResource("cliente", ClienteController::class);
