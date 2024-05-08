@@ -1,0 +1,11 @@
+1. Actualizar paquetes con Composer para PHP (vendor)
+    composer update
+2. copiar el archivo (.env.example) y renombrar (.env)
+
+3. generar un hash unico para cada proyecto
+    php artisan key:generate
+
+4. crear BD y ejecutar migraciónes
+    php artisan migrate --seed
+
+5. php artisan serve 
